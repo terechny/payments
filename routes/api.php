@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\ApplicationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,8 @@ use App\Http\Controllers\PaymentController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+Route::post('/application', [ ApplicationController::class, 'store' ] )->name('application.store');
 
 Route::get('/users/{user}/payments', [ UserController::class, 'payments' ] )->where(['user' => '[0-9]+']);
 

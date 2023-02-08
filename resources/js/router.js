@@ -7,6 +7,7 @@ import EditComponent from './components/pages/edit.vue'
 import DashboardComponent from './components/pages/dashboard.vue'
 import addComponent from './components/pages/add.vue'
 import loginComponent from './components/pages/login.vue'
+import contactComponent from './components/pages/contact.vue'
 
 const routes = [
     {
@@ -38,7 +39,12 @@ const routes = [
       path: "/login",
       name: "login",
       component: loginComponent,
-    }  
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      component: contactComponent,
+    }   
 
   ];
 

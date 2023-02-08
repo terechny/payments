@@ -13,7 +13,10 @@
             </li>
             <li class="nav-item">
                 <router-link :to="'/dashboard'" class="nav-link" style="text-decoration:none;">Dashboard</router-link>
-            </li>            
+            </li> 
+            <li class="nav-item">
+                <router-link :to="'/contact'" class="nav-link" style="text-decoration:none;">Contact</router-link>
+            </li>                       
         </ul>
         <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
